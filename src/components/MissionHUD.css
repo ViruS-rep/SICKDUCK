@@ -1,0 +1,246 @@
+.mission-hud {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  width: 280px;
+
+  padding: 18px;
+
+  background: rgba(10, 15, 20, 0.88);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  z-index: 1000;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.35);
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.hud-header {
+  margin-bottom: 18px;
+
+  padding-bottom: 12px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+}
+
+.hud-title {
+  font-size: 20px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.hud-subtitle {
+  margin-top: 4px;
+
+  font-size: 11px;
+
+  color: #888;
+
+  letter-spacing: 1.5px;
+}
+
+/* =====================================================
+   SECTIONS
+   ===================================================== */
+
+.hud-section {
+  margin-bottom: 18px;
+}
+
+.section-title {
+  margin-bottom: 8px;
+
+  font-size: 11px;
+
+  color: #777;
+
+  letter-spacing: 1.5px;
+}
+
+/* =====================================================
+   STATUS ROW
+   ===================================================== */
+
+.status-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 6px 0;
+}
+
+.status-label {
+  color: #888;
+
+  font-size: 12px;
+}
+
+.status-value {
+  font-size: 12px;
+
+  font-weight: bold;
+
+  text-align: right;
+}
+
+/* =====================================================
+   MISSION MESSAGE
+   ===================================================== */
+
+.mission-message {
+  margin-top: 10px;
+
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 4px;
+
+  color: #aaa;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+/* =====================================================
+   HAZARD
+   ===================================================== */
+
+.hazard {
+  padding: 8px;
+
+  border-radius: 4px;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.hazard.safe {
+  background: rgba(0, 150, 80, 0.15);
+
+  color: #5ee89a;
+}
+
+.hazard.danger {
+  background: rgba(220, 50, 50, 0.2);
+
+  color: #ff6666;
+}
+
+/* =====================================================
+   MISSION COMPLETE
+   ===================================================== */
+
+.mission-complete {
+  margin-top: 8px;
+
+  padding: 10px;
+
+  background: rgba(0, 180, 100, 0.15);
+
+  border: 1px solid
+    rgba(0, 180, 100, 0.3);
+
+  border-radius: 4px;
+
+  color: #5ee89a;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   SIMULATION CONTROLS
+   ===================================================== */
+
+.hud-controls {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 8px;
+}
+
+.hud-button {
+  flex: 1;
+
+  padding: 9px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.15);
+
+  border-radius: 4px;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    transform 0.1s;
+}
+
+.hud-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color:
+    rgba(255, 255, 255, 0.3);
+}
+
+.hud-button:active {
+  transform: translateY(1px);
+}
+
+.reset-button {
+  background: rgba(220, 50, 50, 0.08);
+
+  border-color:
+    rgba(220, 50, 50, 0.25);
+}
+
+.reset-button:hover {
+  background: rgba(220, 50, 50, 0.18);
+
+  border-color:
+    rgba(220, 50, 50, 0.4);
+}
